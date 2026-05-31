@@ -83,7 +83,7 @@ section { padding: 6rem 0; border-top: 1px solid rgba(255,255,255,0.12); }
     position: absolute; inset: 0;
     background-image: url('images/Image.jpg');
     background-size: cover; background-position: center;
-    opacity: 0.35; filter: grayscale(1) blur(2px);
+    opacity: 0.50; filter: grayscale(1) blur(2px);
     z-index: 0;
 }
 .hero-portrait::after {
@@ -213,3 +213,132 @@ section { padding: 6rem 0; border-top: 1px solid rgba(255,255,255,0.12); }
 .reveal { opacity: 0; transform: translateY(30px); transition: opacity .8s ease, transform .8s ease; }
 .reveal.visible { opacity: 1; transform: translateY(0); }
 
+       /* =========================
+          PROJECT SHOWCASE STYLE
+       ========================= */
+
+   .project-showcase {
+       padding-top: 12rem;
+       border-top: none;
+   }
+
+.project-intro {
+    max-width: 900px;
+    margin-bottom: 5rem;
+}
+
+.project-title {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-size: clamp(4rem, 12vw, 11rem);
+    line-height: 0.85;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.project-description {
+    max-width: 650px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    opacity: 0.75;
+}
+
+.project-hero-image {
+    overflow: hidden;
+    border-radius: 24px;
+    background: #111;
+}
+
+.project-hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform .8s ease, filter .8s ease;
+}
+
+.project-hero-image:hover img {
+    transform: scale(1.03);
+    filter: grayscale(0);
+}
+
+/* =========================
+   DETAILS
+========================= */
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+@media(min-width: 900px) {
+    .details-grid {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+.detail-block {
+    padding: 2rem 0;
+    border-top: 1px solid rgba(255,255,255,0.12);
+}
+
+.detail-label {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: .75rem;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    opacity: .5;
+}
+
+.detail-block h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* =========================
+   STORY SECTION
+========================= */
+
+.story-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+}
+
+@media(min-width: 900px) {
+    .story-grid {
+        grid-template-columns: 1fr 1.4fr;
+        gap: 8rem;
+    }
+}
+
+.story-right p {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    opacity: .8;
+    margin-bottom: 2rem;
+}
+
+
+/* =========================
+   PREMIUM SPACING
+========================= */
+
+.project-story,
+.gallery-section,
+.image-section {
+    padding: 8rem 0;
+}
+
+@media(min-width: 900px) {
+    .project-story,
+    .gallery-section,
+    .image-section {
+        padding: 12rem 0;
+    }
+}
+
+/* ===== WPL BANNER IMAGE ===== */
+.wpl-banner { padding-top: 0; border-top: none; }
+.wpl-image { overflow: hidden; border-radius: 24px; background: #111; }
+.wpl-image img { width: 100%; height: auto; display: block;}
