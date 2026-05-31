@@ -1,17 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Perform</title>
-    <meta name="description" content="Selected personal and school projects.">
-    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&amp;family=Montserrat:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <title>Perform App</title>
+    <meta name="description" content="Perform project">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="images/Icon logo.png">
 </head>
 <body>
+<header class="nav">
 
+    <div class="nav-inner">
+        <a href="Home.html" class="nav-logo"> <img src="images/Asset%201.png" height="40" width="120"/></a>
+        <nav class="nav-links">
+            <a href="Home.html">Work</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="wpl1.html">WPL1</a>
+            <a href="wpl2.html">WPL2</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button class="nav-toggle" aria-label="Menu">☰</button>
+    </div>
 
+    <div class="nav-mobile">
+        <a href="Home.html">Work</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="wpl1.html">WPL1</a>
+        <a href="wpl2.html">WPL2</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+</header>
+
+<section class="project-showcase">
+    <div class="container">
+        <div class="project-intro">
+            <p class="eyebrow">Featured Project · 2025</p>
+            <h1 class="project-title">Perform<br>App</h1>
+            <p class="project-description">
+                A modern football application focused on training trackings,
+                performance analytics and creating a motivating experience
+                for athletes through clean and powerful UI design.
+            </p>
+        </div>
+        <div class="project-hero-image"><img src="images/Schermafbeelding%202026-05-20%20152237.png" alt=""></div>
+    </div>
+</section>
+
+<section class="project-story">
+    <div class="container story-grid">
+        <div class="story-left">
+            <p class="eyebrow">Overview</p>
+            <h2 class="section-title">The<br>Challenge.</h2>
+        </div>
+
+        <div class="story-right">
+            <p>
+                The goal of the Perform App was to create a clean and modern
+                experience for users that want to improve their game.
+            </p>
+            <p>
+                The app combines training trackings, performance analytics
+                and motivation into one strong visual experience.
+            </p>
+        </div>
+    </div>
+</section>
+
+<script src="index.js"></script>
 
 </body>
 </html>
